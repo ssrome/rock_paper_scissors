@@ -1,0 +1,13 @@
+#main{
+    margin: 0 auto;
+}
+h1#title {
+    color: rgb(9, 9, 87);
+    margin: 3% 30%;
+}
+#select{
+    margin: 0 30%;
+}
+#result{
+    margin: 2% 30%;
+}

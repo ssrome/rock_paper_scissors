@@ -1,13 +1,50 @@
 #main{
     margin: 0 auto;
+    background-color: rgb(197, 238, 224);
+}
+#main a {
+    text-decoration: none;
+}
+#main ul li{
+    list-style-type: none;  
 }
 h1#title {
     color: rgb(9, 9, 87);
-    margin: 3% 30%;
+    margin: 3% 35%;
 }
 #select{
-    margin: 0 30%;
+    margin: 0 25%;
+}
+#select p {
+    margin-top: 2%;
+}
+#select ul li{
+    display: inline-block;
+    font-size: 5em;
+    padding-right: 20%;    
+}
+#select ul li a{
+    color: red;
+}
+#select ul li a:hover{
+    color: green;
+}
+ul#choice {
+    margin-top: 10%;
+}
+#reset{
+    width: 60%;
+    font-size: 3em;
+    margin: 3% 0 0 15%;
 }
 #result{
     margin: 2% 30%;
+}
+footer#copyright {
+    margin: 0% 5% 10%;
+    position: fixed;
+    bottom: 0%;
+}
+footer#copyright a {
+    color: black;
 }

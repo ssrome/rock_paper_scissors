@@ -24,7 +24,7 @@ let setPlayerOne = (val) => {
         else if (playerOne === playerTwo){
           return result = document.getElementById('result').innerHTML =  "You picked " + playerOne + " and the computer picked " + playerTwo + ". It's a tie!";
         }
-        else if (playerOne == null) {
+        else if (playerOne == null || playerOne == undefined) {
           return result = document.getElementById('result').innerHTML = "You didn't pick";
         }
         else {

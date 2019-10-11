@@ -1,6 +1,12 @@
+.container {  
+    display: grid;  
+    grid-template-columns: 100%;  
+    grid-template-rows: 150px 250px 150px 350px;  
+}
+
 #main{
     margin: 0 auto;
-    background-color: rgb(197, 238, 224);
+    background-color: rgb(215, 223, 220);
 }
 #main a {
     text-decoration: none;
@@ -34,15 +40,16 @@ ul#choice {
 }
 #reset{
     width: 60%;
-    font-size: 3em;
+    font-size: 2rem;
     margin: 3% 0 0 15%;
 }
 #result{
-    margin: 2% 30%;
+    margin: 2% 30% 10%;
+    font-size: 1.6rem;
 }
+
 footer#copyright {
     margin: 0% 5% 10%;
-    position: fixed;
     bottom: 0%;
 }
 footer#copyright a {

@@ -1,13 +1,14 @@
-.container {  
-    display: grid;  
-    grid-template-columns: 100%;  
-    grid-template-rows: 150px 250px 150px 350px;  
-}
-
 #main{
     margin: 0 auto;
     background-color: rgb(215, 223, 220);
 }
+.container {  
+    display: grid;  
+    grid-template-columns: 100%;  
+    grid-template-rows: 15%;
+    text-align: center;
+}
+
 #main a {
     text-decoration: none;
 }
@@ -16,18 +17,12 @@
 }
 h1#title {
     color: rgb(9, 9, 87);
-    margin: 3% 35%;
-}
-#select{
-    margin: 0 25%;
-}
-#select p {
-    margin-top: 2%;
+    
 }
 #select ul li{
     display: inline-block;
-    font-size: 5em;
-    padding-right: 20%;    
+    font-size: 3em;
+    padding-right: 10%;    
 }
 #select ul li a{
     color: red;
@@ -39,9 +34,9 @@ ul#choice {
     margin-top: 10%;
 }
 #reset{
-    width: 60%;
+    width: 20%;
     font-size: 2rem;
-    margin: 3% 0 0 15%;
+    margin: 0 40%;
 }
 #result{
     margin: 2% 30% 10%;

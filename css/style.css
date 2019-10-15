@@ -1,18 +1,19 @@
 @media (min-width: 220px) {
-    #main{
-        margin: 0 auto;
+    body {
         background-color: rgb(215, 223, 220);
-        padding: 5% 0;
     }
     .container {  
+        margin: 0 auto;
         display: grid;  
         grid-template-columns: 100%;  
-        grid-template-rows: 15%;
+        grid-template-rows: 25%;
         text-align: center;
     }
-    div#select {
-        padding: 2%;
+
+    div {
+        margin: 0%;
     }
+    
     a {
         text-decoration: none;
     }
@@ -21,17 +22,14 @@
     }
     h1#title {
         color: rgb(9, 9, 87);
-        padding: 3%;
     }
-    #select ul li{
-        display: inline-block;
-        font-size: 3em;
-        padding-right: 10%;    
+    ul#choice-list {
+        margin: 0 0 10% -10%; 
     }
     li.choice{
         font-size: 2rem;
         margin: 0 auto;
-        padding: 0 10%;
+        padding: 5% 10% 0;
         display: inline-block;
     }
     li.choice a{
@@ -40,47 +38,71 @@
     li.choice a:hover{
         color: green;
     }
-    ul#choice {
-        margin-top: 10%; 
-    }
+    
     input#reset{
-        width: 55%;
+        width: 45%;
         font-size: 1.2rem;
         background-color: steelblue;
         border-radius: 8%;
     }
-    #result{
-        margin: 2% 30% 10%;
-        font-size: 1.6rem;
+    h3#result{
+        margin: 5%;
+        width: 90%;
+        font-size: 1.4rem;
     }
     
     footer#copyright {
-        margin: 0% 5% 10%;
+        margin: 10% 5% 10%;
         bottom: 0%;
+        text-align: left;
+        font-size: 0.9rem;
     }
     footer#copyright a {
-        color: black;
+        color: steelblue;
     }
 }
 
 /*Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    
+    input#reset{
+        width: 25%;
+        font-size: 1.2rem;
+    }
  }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    .container {  
+        grid-template-rows: 15%;
+    }
+    input#reset{
+        width: 18%;
+        font-size: 1.2rem;
+    }
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    h1#title {
+        font-size: 2.9rem;
+        height: 10%;
+    }
+    ul#choice-list {
+        margin: -2% 1% 3% 1%; 
+        align-self: center;
+    }
     input#reset{
         width: 15%;
         font-size: 1.2rem;
+        margin: -10;
+        height: 100%;
+        align-self: center;
     }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    
     #reset{
         width: 20%;
         font-size: 2rem;

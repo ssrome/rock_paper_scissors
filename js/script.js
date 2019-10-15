@@ -33,16 +33,16 @@ let setPlayerOne = (val) => {
     let game = () => {
         var picked = "You picked " + playerOne + " and the computer picked " + playerTwo;
         if (playerOne === rock && playerTwo === scissors || playerOne === paper && playerTwo === rock || playerOne === scissors && playerTwo === paper){
-          return result = document.getElementById('result').innerHTML = picked + "<p>You win!</p>";
+          return result = document.getElementById('result').innerHTML = picked + "<br/>You win!";
         }
         else if (playerOne === playerTwo){
-          return result = document.getElementById('result').innerHTML =  picked + "<p>It's a tie!</p>";
+          return result = document.getElementById('result').innerHTML =  picked + "<br/>It's a tie!";
         }
         else if (playerOne == null || playerOne == undefined) {
           return result = document.getElementById('result').innerHTML = "You didn't pick";
         }
         else {
-            return result = document.getElementById('result').innerHTML = picked + "<p>You lose!</p>";
+            return result = document.getElementById('result').innerHTML = picked + "<br/>You lose!";
         }
     }
     game();

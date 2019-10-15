@@ -1,52 +1,89 @@
-#main{
-    margin: 0 auto;
-    background-color: rgb(215, 223, 220);
-}
-.container {  
-    display: grid;  
-    grid-template-columns: 100%;  
-    grid-template-rows: 15%;
-    text-align: center;
-}
-
-#main a {
-    text-decoration: none;
-}
-#main ul li{
-    list-style-type: none;  
-}
-h1#title {
-    color: rgb(9, 9, 87);
+@media (min-width: 220px) {
+    #main{
+        margin: 0 auto;
+        background-color: rgb(215, 223, 220);
+        padding: 5% 0;
+    }
+    .container {  
+        display: grid;  
+        grid-template-columns: 100%;  
+        grid-template-rows: 15%;
+        text-align: center;
+    }
+    div#select {
+        padding: 2%;
+    }
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style-type: none; 
+    }
+    h1#title {
+        color: rgb(9, 9, 87);
+        padding: 3%;
+    }
+    #select ul li{
+        display: inline-block;
+        font-size: 3em;
+        padding-right: 10%;    
+    }
+    li.choice{
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 0 10%;
+        display: inline-block;
+    }
+    li.choice a{
+        color: red;
+    }
+    li.choice a:hover{
+        color: green;
+    }
+    ul#choice {
+        margin-top: 10%; 
+    }
+    input#reset{
+        width: 55%;
+        font-size: 1.2rem;
+        background-color: steelblue;
+        border-radius: 8%;
+    }
+    #result{
+        margin: 2% 30% 10%;
+        font-size: 1.6rem;
+    }
     
-}
-#select ul li{
-    display: inline-block;
-    font-size: 3em;
-    padding-right: 10%;    
-}
-#select ul li a{
-    color: red;
-}
-#select ul li a:hover{
-    color: green;
-}
-ul#choice {
-    margin-top: 10%;
-}
-#reset{
-    width: 20%;
-    font-size: 2rem;
-    margin: 0 40%;
-}
-#result{
-    margin: 2% 30% 10%;
-    font-size: 1.6rem;
+    footer#copyright {
+        margin: 0% 5% 10%;
+        bottom: 0%;
+    }
+    footer#copyright a {
+        color: black;
+    }
 }
 
-footer#copyright {
-    margin: 0% 5% 10%;
-    bottom: 0%;
-}
-footer#copyright a {
-    color: black;
-}
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    input#reset{
+        width: 15%;
+        font-size: 1.2rem;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    #reset{
+        width: 20%;
+        font-size: 2rem;
+        margin: 0 40%;
+    }
+ }

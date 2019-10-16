@@ -1,52 +1,111 @@
-#main{
-    margin: 0 auto;
-    background-color: rgb(215, 223, 220);
-}
-.container {  
-    display: grid;  
-    grid-template-columns: 100%;  
-    grid-template-rows: 15%;
-    text-align: center;
-}
+@media (min-width: 220px) {
+    body {
+        background-color: rgb(215, 223, 220);
+    }
+    .container {  
+        margin: 0 auto;
+        display: grid;  
+        grid-template-columns: 100%;  
+        grid-template-rows: 25%;
+        text-align: center;
+    }
 
-#main a {
-    text-decoration: none;
-}
-#main ul li{
-    list-style-type: none;  
-}
-h1#title {
-    color: rgb(9, 9, 87);
+    div {
+        margin: 0%;
+    }
     
-}
-#select ul li{
-    display: inline-block;
-    font-size: 3em;
-    padding-right: 10%;    
-}
-#select ul li a{
-    color: red;
-}
-#select ul li a:hover{
-    color: green;
-}
-ul#choice {
-    margin-top: 10%;
-}
-#reset{
-    width: 20%;
-    font-size: 2rem;
-    margin: 0 40%;
-}
-#result{
-    margin: 2% 30% 10%;
-    font-size: 1.6rem;
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style-type: none; 
+    }
+    h1#title {
+        color: rgb(9, 9, 87);
+    }
+    ul#choice-list {
+        margin: 0 0 10% -10%; 
+    }
+    li.choice{
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 5% 10% 0;
+        display: inline-block;
+    }
+    li.choice a{
+        color: red;
+    }
+    li.choice a:hover{
+        color: green;
+    }
+    
+    input#reset{
+        width: 45%;
+        font-size: 1.2rem;
+        background-color: steelblue;
+        border-radius: 8%;
+    }
+    h3#result{
+        margin: 5%;
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    
+    footer#copyright {
+        margin: 10% 5% 10%;
+        bottom: 0%;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    footer#copyright a {
+        color: steelblue;
+    }
 }
 
-footer#copyright {
-    margin: 0% 5% 10%;
-    bottom: 0%;
-}
-footer#copyright a {
-    color: black;
-}
+/*Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    input#reset{
+        width: 25%;
+        font-size: 1.2rem;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {  
+        grid-template-rows: 15%;
+    }
+    input#reset{
+        width: 18%;
+        font-size: 1.2rem;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    h1#title {
+        font-size: 2.9rem;
+        height: 10%;
+    }
+    ul#choice-list {
+        margin: -2% 1% 3% 1%; 
+        align-self: center;
+    }
+    input#reset{
+        width: 15%;
+        font-size: 1.2rem;
+        margin: -10;
+        height: 100%;
+        align-self: center;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+    #reset{
+        width: 20%;
+        font-size: 2rem;
+        margin: 0 40%;
+    }
+ }

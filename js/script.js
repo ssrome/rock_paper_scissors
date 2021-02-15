@@ -48,4 +48,4 @@ scissors.addEventListener("click", playGame);
 let date = new Date(Date.now());
 let year = date.getFullYear();
 let footer = document.querySelector("#footer");
-footer.innerHTML = `2020 - ${year} Copyright | All Rights Reserved. Designed by <a href='http://www.saromsa.com' target='_blank'>SaRomSa`;
+footer.innerHTML = `2020 - ${year} Copyright | All Rights Reserved. Designed by <a href='http://www.saromsa.com' target='_blank'>SaRomSa</a>`;

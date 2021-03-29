@@ -48,4 +48,5 @@ scissors.addEventListener("click", playGame);
 let date = new Date(Date.now());
 let year = date.getFullYear();
 let footer = document.querySelector("#footer");
-footer.innerHTML = `2020 - ${year} Copyright | All Rights Reserved. Designed by <a href='http://www.saromsa.com' target='_blank'>SaRomSa</a>`;
+footer.innerHTML = `2020 - ${year} Copyright | All Rights Reserved. <a href="https://github.com/ssrome/rock_paper_scissors" target="_blank">
+        Open-source code</a> by <a href='http://www.saromsa.com' target='_blank'>SaRomSa</a>`;
